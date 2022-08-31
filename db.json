@@ -3,24 +3,24 @@
     {
       "name": "'Olu Mel",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/6/61/Olu_main.png",
-      "likes": 0,
-      "dislike": 0,
+      "likes": 1,
+      "dislike": 1,
       "comments": [],
       "id": 1
     },
     {
       "name": ".GIFfany",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/51/Giffany.png",
-      "likes": 0,
-      "dislike": 0,
+      "likes": 2,
+      "dislike": 2,
       "comments": [],
       "id": 2
     },
     {
       "name": "627",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/8/80/Profile_-_627.png",
-      "likes": 0,
-      "dislike": 0,
+      "likes": 3,
+      "dislike": 2,
       "comments": [],
       "id": 3
     },
@@ -67,7 +67,7 @@
     {
       "name": "Abdullah",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/cb/1087603-44532-clp-950.jpg",
-      "likes": 0,
+      "likes": 3,
       "dislike": 0,
       "comments": [],
       "id": 9
@@ -83,7 +83,7 @@
     {
       "name": "Abigail the Cow",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/05/Fox-disneyscreencaps_com-901.jpg",
-      "likes": 0,
+      "likes": 4,
       "dislike": 0,
       "comments": [],
       "id": 11
@@ -91,7 +91,7 @@
     {
       "name": "Abigail",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/d/dd/Regalblond.jpg",
-      "likes": 0,
+      "likes": 4,
       "dislike": 0,
       "comments": [],
       "id": 12
@@ -99,7 +99,7 @@
     {
       "name": "Queen Abigail",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/f/fa/Normal_EoA_S3_E4_0217.jpg",
-      "likes": 0,
+      "likes": null,
       "dislike": 0,
       "comments": [],
       "id": 13
@@ -147,7 +147,7 @@
     {
       "name": "Abuelita",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/cd/Profile_-_Abuelita.png",
-      "likes": 0,
+      "likes": 6,
       "dislike": 0,
       "comments": [],
       "id": 19
@@ -155,7 +155,7 @@
     {
       "name": "Abuelito",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/c8/Char_51942_thumb.jpg",
-      "likes": 0,
+      "likes": null,
       "dislike": 0,
       "comments": [],
       "id": 20
