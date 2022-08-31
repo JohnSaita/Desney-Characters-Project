@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //Character json-server URL
   const url = 'https://api.disneyapi.dev/characters';
-  const URL = 'https://my-json-server.typicode.com/JohnSaita/Desney-Characters-Project/characters';
+  const URL = 'http://localhost:3000/characters';
   // Querry Character Name
   const charName = document.querySelector('h3');
   //Querry Character Image
