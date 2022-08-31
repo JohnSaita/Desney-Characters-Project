@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //Character json-server URL
   const url = 'https://api.disneyapi.dev/characters';
-  const URL = 'http://localhost:3000/characters';
+  const URL = 'https://my-json-server.typicode.com/JohnSaita/Desney-Characters-Project/characters';
   // Querry Character Name
   const charName = document.querySelector('h3');
   //Querry Character Image
@@ -141,33 +141,45 @@ document.addEventListener('DOMContentLoaded', () => {
               val.addEventListener('click', () => {
                 charName.innerText = char.innerText;
                 charImg.src = image.src;
+                like.innerHTML = `&#128077;`
+                likeBtn()
+                console.log('i have been clicked')
               });
             }
 //-----------------------------------------------------------------------------------
 
 //-------------Setting Like and Dislike Button------------------------------------------
+      likeBtn()
 
-              //like and dislike button configuration
+      function likeBtn() { //like and dislike button configuration
 
-              //like button configuration
+        //like button configuration
+        const itemChar=data.find((char)=>char.imageUrl === charImg.src)
+        let count = itemChar.likes
+        like.innerHTML = `${count} &#128077;`;
 
-              let count = 0
+        like.addEventListener('click', () => {
+          count++
+          like.innerHTML = `${count} &#128077;`;
 
-              like.addEventListener('click', () => {
-                count++
-                like.innerHTML = `${count} &#128077;`;
+          for (item of data) {
+            if (item.imageUrl === charImg.src) {
+              //updating likes on the server
+          fetchMethod(`${URL}/${item.id}`, 'PATCH', { 'likes': count });
 
-                //updating likes on the server
-                // fetchMethod(`${URL}/${charId}`, 'PATCH', { 'likes': count });
-              });
-              //dislike button configuration
-              let disCount = 0
-              dislike.addEventListener('click', () => {
-                disCount++
-                dislike.innerHTML = `${disCount} &#128078;`
-                //updating dislikes on the server
-                // fetchMethod(`${URL}/${charId}`, 'PATCH', { 'dislike': disCount });
-              });
+            }
+          }
+        });
+        //dislike button configuration
+        let disCount = itemChar.dislike
+        dislike.innerHTML = `${disCount} &#128078;`
+        dislike.addEventListener('click', () => {
+          disCount++
+          dislike.innerHTML = `${disCount} &#128078;`
+          //updating dislikes on the server
+          // fetchMethod(`${URL}/${charId}`, 'PATCH', { 'dislike': disCount });
+        });
+      }
 //--------------------------------------------------------------------------------------
 
 
