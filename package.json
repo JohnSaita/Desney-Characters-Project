@@ -1,0 +1,23 @@
+{
+  "name": "desney-characters-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnSaita/Desney-Characters-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnSaita/Desney-Characters-Project/issues"
+  },
+  "homepage": "https://github.com/JohnSaita/Desney-Characters-Project#readme",
+  "dependencies": {
+    "json-server": "^0.16.2"
+  }
+}

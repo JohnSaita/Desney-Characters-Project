@@ -1,7 +1,7 @@
 
   //Character json-server URL
   const url = 'https://api.disneyapi.dev/characters';
-  const URL = 'http://localhost:3000/characters';
+  const URL = 'https://my-json-server.typicode.com/JohnSaita/Desney-Characters-Project/characters';
   // Querry Character Name
   const charName = document.querySelector('h3');
   //Querry Character Image
@@ -46,6 +46,7 @@
               fetch(URL)
                 .then(res => res.json())
                 .then(data => {
+
                   const charLocal = data.find(obj);
                   function obj(char) {
                     return char.name===charName.innerText
@@ -57,6 +58,7 @@
                       'likes': like.innerText,
                       'dislike': dislike.innerText
                     });
+                    console.log('POST Successful')
                   } else {
                     fetchMethod(`${URL}/${charLocal.id}`, 'PATCH', {
                       'likes': like.innerText,
