@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //random number
   const num = Math.floor(Math.random() * 50);
-  const num2 = Math.floor(Math.random() * 50);
+
 
 
   //-------------------GET data from Disney API-------------------------------
@@ -142,6 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
           for (val of sidebarChar) {
+            const num2 = Math.floor(Math.random() * 50);
             const image = val.querySelector('img')
             const char = val.querySelector('.char')
             char.style.textAlign = "center"
@@ -194,8 +195,14 @@ document.addEventListener('DOMContentLoaded', () => {
             dislike.addEventListener('click', () => {
               disCount++
               dislike.innerHTML = `${disCount} &#128078;`
-              //updating dislikes on the server
-              fetchMethod(`${URL}/${charId}`, 'PATCH', { 'dislike': disCount });
+              for (item of data) {
+                if (item.imageUrl === charImg.src) {
+                  //updating dislikes on the server
+              fetchMethod(`${URL}/${item.id}`, 'PATCH', { 'dislike': disCount });
+
+                }
+              }
+
             });
           }
           //--------------------------------------------------------------------------------------
