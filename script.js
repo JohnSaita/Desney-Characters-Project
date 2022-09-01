@@ -1,7 +1,7 @@
 
   //Character json-server URL
   const url = 'https://api.disneyapi.dev/characters';
-  const URL = 'http://localhost:3000/characters';
+  const URL = 'https://saita-disney-char-api.herokuapp.com/characters';
   // Querry Character Name
   const charName = document.querySelector('h3');
   //Querry Character Image
