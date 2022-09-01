@@ -13,3 +13,7 @@ Another special feature of the web page is that the date when the user comment o
 is also recorded and displayed on the comment section.<br>
 The webpage uses Fake Online REST server to ensure that data in the db.json can be accessed<br>
 remotely.
+
+>The webpage can be accessed at https://johnsaita.github.io/Desney-Characters-Project/ .<br>
+>>  public api used 'https://api.disneyapi.dev/characters';<br>
+>>  json api hosted on heroku 'https://saita-disney-char-api.herokuapp.com/characters';
