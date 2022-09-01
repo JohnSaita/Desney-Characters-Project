@@ -2,6 +2,7 @@
   //Character json-server URL
   const url = 'https://api.disneyapi.dev/characters';
   const URL = 'https://saita-disney-char-api.herokuapp.com/characters';
+
   // Querry Character Name
   const charName = document.querySelector('h3');
   //Querry Character Image
@@ -46,6 +47,7 @@
               fetch(URL)
                 .then(res => res.json())
                 .then(data => {
+
                   const charLocal = data.find(obj);
                   function obj(char) {
                     return char.name===charName.innerText
@@ -57,6 +59,7 @@
                       'likes': like.innerText,
                       'dislike': dislike.innerText
                     });
+                    console.log('POST Successful')
                   } else {
                     fetchMethod(`${URL}/${charLocal.id}`, 'PATCH', {
                       'likes': like.innerText,
@@ -122,6 +125,7 @@
           charName.innerText = desneyData[num].name;
       charImg.src = desneyData[num].imageUrl;
       post();
+      likeBtn()
           //Configuring sidebr characters
           //querry sidebar characters
           const sidebarChar = document.getElementsByClassName('preview');
