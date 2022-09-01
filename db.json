@@ -3,33 +3,9 @@
     {
       "name": "Agatha",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/4/40/J119.png",
-      "likes": "0",
-      "dislike": "0",
+      "likes": "5",
+      "dislike": "2",
       "id": 1
-    },
-    {
-      "likes": 1,
-      "id": 2
-    },
-    {
-      "likes": 1,
-      "id": 3
-    },
-    {
-      "likes": 2,
-      "id": 4
-    },
-    {
-      "likes": 2,
-      "id": 5
-    },
-    {
-      "likes": 3,
-      "id": 6
-    },
-    {
-      "likes": 3,
-      "id": 7
     }
   ]
 }

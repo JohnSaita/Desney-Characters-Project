@@ -50,7 +50,6 @@
                   function obj(char) {
                     return char.name===charName.innerText
                   }
-                  console.log(charLocal)
                   if (charLocal === undefined) {
                     fetchMethod(URL, 'POST', {
                       'name': charName.innerText,
@@ -152,44 +151,44 @@
           function likeBtn() { //like and dislike button configuration
 
             //like button configuration
-            // const itemChar = data.find((char) => char.imageUrl === charImg.src)
 
-            // if (itemChar != 'undefined') {
-            //   console.log(itemChar)
-            //   let count = itemChar.likes
-            //   like.innerHTML =count;
-            // } else {
-            //   like.innerHTML =0;
-            // }
-            let count = 0;
-            like.innerHTML = count;
+            fetch(URL)
+              .then(res => res.json())
+              .then(dataLocal => {
+                const itemChar = dataLocal.find(isAvailable)
+                function isAvailable(char) {
+                  return char.imageUrl === charImg.src
+                }
+                if (itemChar != undefined) {
+
+                  let count = itemChar.likes
+                  like.innerHTML = count;
+
+                  like.addEventListener('click', () => {
+                    count++
+                    like.innerHTML = count
+
+                    // const characterFound = data.find((item) => item.imageUrl === charImg.src)
+
+                    //updating likes on the server
+                    fetchMethod(`${URL}/${itemChar.id}`, 'PATCH', { 'likes': count })
+
+                  });
+                  //dislike button configuration
+                  let disCount = itemChar.dislike
+                  dislike.innerHTML = disCount
+                  dislike.addEventListener('click', () => {
+                    disCount++
+                    dislike.innerHTML = disCount
+                    //updating dislikes on the server
+                    fetchMethod(`${URL}/${itemChar.id}`, 'PATCH', { 'dislike': disCount });
+
+                  });
+                }
+
+              });
 
 
-            like.addEventListener('click', () => {
-              count++
-              like.innerHTML = count
-
-              // const characterFound = data.find((item) => item.imageUrl === charImg.src)
-
-                  //updating likes on the server
-                 fetchMethod(`${URL}`, 'POST', { 'likes': count })
-
-            });
-            //dislike button configuration
-            let disCount =0
-            dislike.innerHTML = disCount
-            dislike.addEventListener('click', () => {
-              disCount++
-              dislike.innerHTML = disCount
-
-
-                  //updating dislikes on the server
-              fetchMethod(URL, 'POST', { 'dislike': disCount });
-
-
-
-
-            });
           }
           //--------------------------------------------------------------------------------------
     });
