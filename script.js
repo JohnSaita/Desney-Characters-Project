@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //Character json-server URL
   const url = 'https://api.disneyapi.dev/characters';
-  const URL = 'https://my-json-server.typicode.com/JohnSaita/Desney-Characters-Project/characters';
+  const URL = 'http://localhost:3000/characters';
   // Querry Character Name
   const charName = document.querySelector('h3');
   //Querry Character Image
@@ -49,6 +49,18 @@ document.addEventListener('DOMContentLoaded', () => {
       fetch(URL)
         .then(res => res.json())
         .then(data => {
+  //----------------------fetching comments from Json Character------------------------
+          function comments() {
+            const itemChar = data.find((char) => char.imageUrl === charImg.src)
+            if (itemChar != 'undefined') {
+              console.log(itemChar)
+            } else {
+
+            }
+          }
+          comments()
+
+
           //-----------------search and comment----------------------------------------
           //configuring search button
           const searchBtn = document.querySelector('#search-form');
@@ -130,8 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
           for (val of sidebarChar) {
-            const num2 = Math.floor(Math.random() * 50);
-
             const image = val.querySelector('img')
             const char = val.querySelector('.char')
             char.style.textAlign = "center"
@@ -154,8 +164,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             //like button configuration
             const itemChar = data.find((char) => char.imageUrl === charImg.src)
-            console.log(itemChar)
+
             if (itemChar != 'undefined') {
+              console.log(itemChar)
               let count = itemChar.likes
               like.innerHTML =count;
             } else {
@@ -184,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
               disCount++
               dislike.innerHTML = `${disCount} &#128078;`
               //updating dislikes on the server
-              // fetchMethod(`${URL}/${charId}`, 'PATCH', { 'dislike': disCount });
+              fetchMethod(`${URL}/${charId}`, 'PATCH', { 'dislike': disCount });
             });
           }
           //--------------------------------------------------------------------------------------

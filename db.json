@@ -75,7 +75,7 @@
     {
       "name": "Abigail Markham",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/95/Abigail_Markham.jpeg",
-      "likes": 0,
+      "likes": 3,
       "dislike": 0,
       "comments": [],
       "id": 10
@@ -155,7 +155,7 @@
     {
       "name": "Abuelito",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/c8/Char_51942_thumb.jpg",
-      "likes": null,
+      "likes": 20,
       "dislike": 0,
       "comments": [],
       "id": 20
