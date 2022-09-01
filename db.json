@@ -3,14 +3,14 @@
     {
       "name": "Agatha",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/4/40/J119.png",
-      "likes": "5",
+      "likes": 7,
       "dislike": "2",
       "id": 1
     },
     {
       "name": "Ace",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/1/1e/Profile_-_Ace.png",
-      "likes": 0,
+      "likes": 2,
       "dislike": 0,
       "id": 2
     },
@@ -24,16 +24,219 @@
     {
       "name": "Agent",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/b/b2/Agent-%28Bolt%29.jpg",
-      "likes": 0,
+      "likes": 1,
       "dislike": 0,
       "id": 4
     },
     {
       "name": "Adorable Norm",
       "imageUrl": "https://static.wikia.nocookie.net/disney/images/6/64/Adorable_Norm.png",
-      "likes": 2,
+      "likes": 4,
       "dislike": 2,
       "id": 5
+    },
+    {
+      "name": "A.R.F.",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/b/ba/A.R.F.png",
+      "likes": 0,
+      "dislike": 0,
+      "id": 6
+    },
+    {
+      "name": "Agent E",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/d/d4/Agent_E_salutes_Perry.jpg",
+      "likes": 0,
+      "dislike": 0,
+      "id": 7
+    },
+    {
+      "name": "Abu",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/3f/Profile_-_Abu.png",
+      "likes": 0,
+      "dislike": 0,
+      "id": 8
+    },
+    {
+      "name": "'Olu Mel",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/6/61/Olu_main.png",
+      "likes": 0,
+      "dislike": 0,
+      "id": 9
+    },
+    {
+      "name": "Adora",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/6/6b/Profile-Adora.PNG",
+      "likes": 0,
+      "dislike": 0,
+      "id": 10
+    },
+    {
+      "name": "Adelbert's Father",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/96/Adelbertsfather.jpg",
+      "likes": 0,
+      "dislike": 0,
+      "id": 11
+    },
+    {
+      "name": "Claire Addison",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/79/Claireaddison.jpeg",
+      "likes": 0,
+      "dislike": 0,
+      "id": 12
+    },
+    {
+      "name": "Abigail Markham",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/95/Abigail_Markham.jpeg",
+      "likes": 0,
+      "dislike": 0,
+      "id": 13
+    },
+    {
+      "name": "Addison",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/05/Addison_from_slod.jpg",
+      "likes": 1,
+      "dislike": 0,
+      "id": 14
+    },
+    {
+      "name": "Agent Gordon",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/51/Screenshot_2016-09-12_at_8.13.42_PM.png",
+      "likes": 0,
+      "dislike": 0,
+      "id": 15
+    },
+    {
+      "name": "Achilles",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/8/8f/Achilles_HOND.jpg",
+      "likes": 0,
+      "dislike": 0,
+      "id": 16
+    },
+    {
+      "name": "Abuelita",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/cd/Profile_-_Abuelita.png",
+      "likes": 0,
+      "dislike": 0,
+      "id": 17
+    },
+    {
+      "name": "Abraxas",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/ce/Abraxas.jpg",
+      "likes": 5,
+      "dislike": 0,
+      "id": 18
+    },
+    {
+      "name": "A.J. Arno",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/2/2c/A.J._Arno.jpg",
+      "likes": 3,
+      "dislike": 0,
+      "id": 19
+    },
+    {
+      "name": "Addison",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/e/e5/Addison%25_27s_More_Than_Cheer_%25_3F_Teaser_ZOMBIES_2_Disney_Channel.jpg",
+      "likes": 2,
+      "dislike": 0,
+      "id": 20
+    },
+    {
+      "name": "Abdullah",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/cb/1087603-44532-clp-950.jpg",
+      "likes": 0,
+      "dislike": 0,
+      "id": 21
+    },
+    {
+      "name": "Abuelito",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/c8/Char_51942_thumb.jpg",
+      "likes": 0,
+      "dislike": 0,
+      "id": 22
+    },
+    {
+      "name": "Amber Addison",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/52/250px-Amber.jpg",
+      "likes": 0,
+      "dislike": 0,
+      "id": 23
+    },
+    {
+      "name": "AC and DC",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/75/Profile_-_AC_and_DC.jpg",
+      "likes": 0,
+      "dislike": 0,
+      "id": 24
+    },
+    {
+      "name": "Able",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/a/af/Able.png",
+      "likes": 0,
+      "dislike": 0,
+      "id": 25
+    },
+    {
+      "name": "Agent K",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/8/88/The-replacements-kath-soucie-0.jpg",
+      "likes": 1,
+      "dislike": 0,
+      "id": 26
+    },
+    {
+      "name": "Adelbert",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/2/21/Adelbert.jpg",
+      "likes": 0,
+      "dislike": 0,
+      "id": 27
+    },
+    {
+      "name": "90's Adventure Bear",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/3f/90%27s_Adventure_Bear_profile.png",
+      "likes": 0,
+      "dislike": 0,
+      "id": 28
+    },
+    {
+      "name": "Adira",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/f/fa/Adira_Tangled.jpeg",
+      "likes": 0,
+      "dislike": 0,
+      "id": 29
+    },
+    {
+      "name": "Professor Acari",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/5d/Professor_Acari.jpg",
+      "likes": 0,
+      "dislike": 0,
+      "id": 30
+    },
+    {
+      "name": "Gator Adams",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/6/60/LeonaGatorAdams.jpg",
+      "likes": 0,
+      "dislike": 0,
+      "id": 31
+    },
+    {
+      "name": "Absolem",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/4/4d/Caterpillar.jpg",
+      "likes": 0,
+      "dislike": 0,
+      "id": 32
+    },
+    {
+      "name": "Aerosol",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/92/Screenshot_2016-09-08_at_10.18.27_PM.png",
+      "likes": 0,
+      "dislike": 0,
+      "id": 33
+    },
+    {
+      "name": "627",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/8/80/Profile_-_627.png",
+      "likes": 0,
+      "dislike": 0,
+      "id": 34
     }
   ]
 }
