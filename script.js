@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
 
   //Character json-server URL
   const url = 'https://api.disneyapi.dev/characters';
@@ -24,42 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch(url)
     .then(res => res.json())
     .then(data => {
-      //-------------send Data to Local Server------------------------------
-      //Pesting Disney character to json server
-      let desneyData = data.data
-      fetch(URL)
-        .then(res => res.json())
-        .then(data => {
-          if (data.length === 0) {
-            //push data to json server
-            for (item of desneyData) {
-              fetchMethod(URL, 'POST', {
-                'name': item.name,
-                'imageUrl': item.imageUrl,
-                'likes': 0,
-                'dislike': 0,
-                'comments': []
-              })
-            }
-          }
-        });
-      //----------------------------------------------------------------------------
-
-      //--------------------------Fetching Data from Local api--------------------------
-      fetch(URL)
-        .then(res => res.json())
-        .then(data => {
-  //----------------------fetching comments from Json Character------------------------
-          function comments() {
-            const itemChar = data.find((char) => char.imageUrl === charImg.src)
-            if (itemChar != 'undefined') {
-              console.log(itemChar)
-            } else {
-
-            }
-          }
-          comments()
-
+      const desneyData=data.data
 
           //-----------------search and comment----------------------------------------
           //configuring search button
@@ -69,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
           searchBtn.addEventListener('submit', (e) => {
             const searchInput = document.querySelector('#search').value
             e.preventDefault();
-            const array = data;
+            const array = desneyData;
             const searchObj = array.find(isTrue);
 
             function isTrue(char) {
@@ -79,6 +43,29 @@ document.addEventListener('DOMContentLoaded', () => {
               charName.innerText = searchObj.name;
               charImg.src = searchObj.imageUrl;
               likeBtn();
+              fetch(URL)
+                .then(res => res.json())
+                .then(data => {
+                  const charLocal = data.find(obj);
+                  function obj(char) {
+                    return char.name===charName.innerText
+                  }
+                  console.log(charLocal)
+                  if (charLocal === undefined) {
+                    fetchMethod(URL, 'POST', {
+                      'name': charName.innerText,
+                      'imageUrl': charImg.src,
+                      'likes': like.innerText,
+                      'dislike': dislike.innerText
+                    });
+                  } else {
+                    fetchMethod(`${URL}/${charLocal.id}`, 'PATCH', {
+                      'likes': like.innerText,
+                      'dislike': dislike.innerText
+                    })
+                  }
+              })
+
 
 
             } else {
@@ -158,60 +145,56 @@ document.addEventListener('DOMContentLoaded', () => {
           }
           //-----------------------------------------------------------------------------------
 
+
           //-------------Setting Like and Dislike Button------------------------------------------
 
           likeBtn()
           function likeBtn() { //like and dislike button configuration
 
             //like button configuration
-            const itemChar = data.find((char) => char.imageUrl === charImg.src)
+            // const itemChar = data.find((char) => char.imageUrl === charImg.src)
 
-            if (itemChar != 'undefined') {
-              console.log(itemChar)
-              let count = itemChar.likes
-              like.innerHTML =count;
-            } else {
-              like.innerHTML =0;
-            }
-            let count = parseInt(like.innerText);
-            like.innerHTML = `${count} &#128077;`;
+            // if (itemChar != 'undefined') {
+            //   console.log(itemChar)
+            //   let count = itemChar.likes
+            //   like.innerHTML =count;
+            // } else {
+            //   like.innerHTML =0;
+            // }
+            let count = 0;
+            like.innerHTML = count;
 
 
             like.addEventListener('click', () => {
               count++
-              like.innerHTML = `${count} &#128077;`;
+              like.innerHTML = count
 
-              for (item of data) {
-                if (item.imageUrl === charImg.src) {
+              // const characterFound = data.find((item) => item.imageUrl === charImg.src)
+
                   //updating likes on the server
-                  fetchMethod(`${URL}/${item.id}`, 'PATCH', { 'likes': count });
+                 fetchMethod(`${URL}`, 'POST', { 'likes': count })
 
-                }
-              }
             });
             //dislike button configuration
-            let disCount = itemChar.dislike
-            dislike.innerHTML = `${disCount} &#128078;`
+            let disCount =0
+            dislike.innerHTML = disCount
             dislike.addEventListener('click', () => {
               disCount++
-              dislike.innerHTML = `${disCount} &#128078;`
-              for (item of data) {
-                if (item.imageUrl === charImg.src) {
-                  //updating dislikes on the server
-              fetchMethod(`${URL}/${item.id}`, 'PATCH', { 'dislike': disCount });
+              dislike.innerHTML = disCount
 
-                }
-              }
+
+                  //updating dislikes on the server
+              fetchMethod(URL, 'POST', { 'dislike': disCount });
+
+
+
 
             });
           }
           //--------------------------------------------------------------------------------------
-
-
-        });
-      //---------------------------------------------------------------------------------
     });
-});
+
+
 // Fetch Method POST AND PATCH
 function fetchMethod(url, method, obj) {
   fetch(url, {

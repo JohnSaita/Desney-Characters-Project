@@ -1,204 +1,35 @@
 {
   "characters": [
     {
-      "name": "'Olu Mel",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/6/61/Olu_main.png",
-      "likes": 1,
-      "dislike": 1,
-      "comments": [],
+      "name": "Agatha",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/4/40/J119.png",
+      "likes": "0",
+      "dislike": "0",
       "id": 1
     },
     {
-      "name": ".GIFfany",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/51/Giffany.png",
-      "likes": 2,
-      "dislike": 2,
-      "comments": [],
+      "likes": 1,
       "id": 2
     },
     {
-      "name": "627",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/8/80/Profile_-_627.png",
-      "likes": 3,
-      "dislike": 2,
-      "comments": [],
+      "likes": 1,
       "id": 3
     },
     {
-      "name": "9-Eye",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/77/9-eye.jpg",
-      "likes": 0,
-      "dislike": 0,
-      "comments": [],
+      "likes": 2,
       "id": 4
     },
     {
-      "name": "90's Adventure Bear",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/3f/90%27s_Adventure_Bear_profile.png",
-      "likes": 0,
-      "dislike": 0,
-      "comments": [],
+      "likes": 2,
       "id": 5
     },
     {
-      "name": "A.B.E.",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/2/20/ABE.jpg",
-      "likes": 0,
-      "dislike": 0,
-      "comments": [],
+      "likes": 3,
       "id": 6
     },
     {
-      "name": "A.J. Arno",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/2/2c/A.J._Arno.jpg",
-      "likes": 1,
-      "dislike": 3,
-      "comments": [],
+      "likes": 3,
       "id": 7
-    },
-    {
-      "name": "A.R.F.",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/b/ba/A.R.F.png",
-      "likes": 0,
-      "dislike": 0,
-      "comments": [],
-      "id": 8
-    },
-    {
-      "name": "Abdullah",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/cb/1087603-44532-clp-950.jpg",
-      "likes": 3,
-      "dislike": 0,
-      "comments": [],
-      "id": 9
-    },
-    {
-      "name": "Abigail Markham",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/9/95/Abigail_Markham.jpeg",
-      "likes": 3,
-      "dislike": 0,
-      "comments": [],
-      "id": 10
-    },
-    {
-      "name": "Abigail the Cow",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/0/05/Fox-disneyscreencaps_com-901.jpg",
-      "likes": 4,
-      "dislike": 0,
-      "comments": [],
-      "id": 11
-    },
-    {
-      "name": "Abigail",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/d/dd/Regalblond.jpg",
-      "likes": 4,
-      "dislike": 2,
-      "comments": [],
-      "id": 12
-    },
-    {
-      "name": "Queen Abigail",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/f/fa/Normal_EoA_S3_E4_0217.jpg",
-      "likes": null,
-      "dislike": 0,
-      "comments": [],
-      "id": 13
-    },
-    {
-      "name": "Abis Mal's Thugs",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/b/ba/Abis_Mal%27s_Thugs.jpg",
-      "likes": 0,
-      "dislike": 0,
-      "comments": [],
-      "id": 14
-    },
-    {
-      "name": "Able",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/a/af/Able.png",
-      "likes": 0,
-      "dislike": 0,
-      "comments": [],
-      "id": 15
-    },
-    {
-      "name": "Abraxas",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/ce/Abraxas.jpg",
-      "likes": 0,
-      "dislike": 0,
-      "comments": [],
-      "id": 16
-    },
-    {
-      "name": "Absolem",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/4/4d/Caterpillar.jpg",
-      "likes": 0,
-      "dislike": 0,
-      "comments": [],
-      "id": 17
-    },
-    {
-      "name": "Abu",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/3/3f/Profile_-_Abu.png",
-      "likes": 0,
-      "dislike": 0,
-      "comments": [],
-      "id": 18
-    },
-    {
-      "name": "Abuelita",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/cd/Profile_-_Abuelita.png",
-      "likes": 6,
-      "dislike": 0,
-      "comments": [],
-      "id": 19
-    },
-    {
-      "name": "Abuelito",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/c/c8/Char_51942_thumb.jpg",
-      "likes": 20,
-      "dislike": 0,
-      "comments": [],
-      "id": 20
-    },
-    {
-      "name": "AC and DC",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/75/Profile_-_AC_and_DC.jpg",
-      "likes": 0,
-      "dislike": 0,
-      "comments": [],
-      "id": 21
-    },
-    {
-      "name": "Professor Acari",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/5/5d/Professor_Acari.jpg",
-      "likes": 0,
-      "dislike": 0,
-      "comments": [],
-      "id": 22
-    },
-    {
-      "name": "Ace",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/1/1e/Profile_-_Ace.png",
-      "likes": 0,
-      "dislike": 0,
-      "comments": [],
-      "id": 23
-    },
-    {
-      "name": "Achilles",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/8/8f/Achilles_HOND.jpg",
-      "likes": 0,
-      "dislike": 0,
-      "comments": [],
-      "id": 24
-    },
-    {
-      "name": "Prince Achmed",
-      "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/76/Aladdin-disneyscreencaps.com-1123.jpg",
-      "likes": 0,
-      "dislike": 0,
-      "comments": [],
-      "id": 25
     }
   ]
 }
