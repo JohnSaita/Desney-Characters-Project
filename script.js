@@ -120,7 +120,26 @@
 
           //---------------setting character displayed on the Page--------------------
           charName.innerText = desneyData[num].name;
-          charImg.src = desneyData[num].imageUrl;
+      charImg.src = desneyData[num].imageUrl;
+      fetch(URL)
+        .then(res=>res.json())
+        .then(dataLocal => {
+          const charSearch = dataLocal.find(isAvailable)
+          function isAvailable(char) {
+            return char.imageUrl===charImg.src
+          }
+          if (charSearch === undefined) {
+            fetchMethod(URL, 'POST', {
+              'name': charName.innerText,
+              'imageUrl': charImg.src,
+              'likes': 0,
+              'dislike':0
+            })
+            likeBtn()
+          }
+        });
+
+
 
           //Configuring sidebr characters
           //querry sidebar characters

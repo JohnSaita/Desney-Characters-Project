@@ -6,6 +6,34 @@
       "likes": "5",
       "dislike": "2",
       "id": 1
+    },
+    {
+      "name": "Ace",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/1/1e/Profile_-_Ace.png",
+      "likes": 0,
+      "dislike": 0,
+      "id": 2
+    },
+    {
+      "name": "Prince Achmed",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/7/76/Aladdin-disneyscreencaps.com-1123.jpg",
+      "likes": 0,
+      "dislike": 0,
+      "id": 3
+    },
+    {
+      "name": "Agent",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/b/b2/Agent-%28Bolt%29.jpg",
+      "likes": 0,
+      "dislike": 0,
+      "id": 4
+    },
+    {
+      "name": "Adorable Norm",
+      "imageUrl": "https://static.wikia.nocookie.net/disney/images/6/64/Adorable_Norm.png",
+      "likes": 2,
+      "dislike": 2,
+      "id": 5
     }
   ]
 }
