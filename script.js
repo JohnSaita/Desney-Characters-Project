@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   //random number
-  const num = Math.floor(Math.random() * 20);
-  const num2 = Math.floor(Math.random() * 20);
+  const num = Math.floor(Math.random() * 50);
+  const num2 = Math.floor(Math.random() * 50);
 
 
   //-------------------GET data from Disney API-------------------------------
@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (typeof array.find(isTrue).name != 'undefined') {
               charName.innerText = searchObj.name;
               charImg.src = searchObj.imageUrl;
+              likeBtn();
 
 
             } else {
@@ -141,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
             val.addEventListener('click', () => {
               charName.innerText = char.innerText;
               charImg.src = image.src;
-              likeBtn()
+              likeBtn();
             });
           }
           //-----------------------------------------------------------------------------------
